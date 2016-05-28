@@ -1,5 +1,6 @@
 #do the same thing 3 ways but with huge differences in speed
 mat <- matrix(c(rep(1:5),rep(6:10),rep(11:15),rep(16:20)),ncol=4)
+mat <- matrix(runif(1e4),nrow=100)
 
 mapplyTst <- function(mat){
   iterator <- expand.grid(1:nrow(mat),1:ncol(mat))
